@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import EventScheduler from "./components/EventScheduler/EventScheduler";
+import SearchPanel from './components/SearchPanel/SearchPanel';
 import { SchedulerData, ViewTypes, DATE_FORMAT } from "react-big-scheduler";
 import moment from "moment";
 import resources from "./data/resources";
@@ -21,6 +22,7 @@ class App extends React.Component {
     
     return (
       <React.Fragment>
+        <SearchPanel />
         <EventScheduler schedulerData={schedulerData} />
       </React.Fragment>
     );
